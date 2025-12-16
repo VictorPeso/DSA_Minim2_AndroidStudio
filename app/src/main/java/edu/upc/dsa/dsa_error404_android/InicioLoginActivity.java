@@ -19,6 +19,7 @@ public class InicioLoginActivity extends AppCompatActivity {
     Button buttonTienda;
     Button buttonLogOut;
     Button buttonInventario;
+    Button buttonRanking;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -60,6 +61,14 @@ public class InicioLoginActivity extends AppCompatActivity {
 
         buttonInventario.setOnClickListener(v -> {
             Intent intent = new Intent(InicioLoginActivity.this, InventarioActivity.class);
+            startActivity(intent);
+        });
+
+        buttonRanking = findViewById(R.id.buttonRanking); // Lo enlazamos con el ID del XML
+
+        buttonRanking.setOnClickListener(v -> {
+            // Reemplaza 'NuevaActividadConRecycler' con el nombre que le des a tu nueva Activity
+            Intent intent = new Intent(InicioLoginActivity.this, TeamRankingActivity.class);
             startActivity(intent);
         });
     }

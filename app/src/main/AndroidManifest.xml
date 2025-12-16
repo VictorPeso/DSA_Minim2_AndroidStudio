@@ -15,6 +15,10 @@
         android:theme="@style/Theme.DSA_Error404_Android"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".TeamRankingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DSA_Error404_Android" />
+        <activity
             android:name=".InventarioActivity"
             android:exported="false" />
         <activity

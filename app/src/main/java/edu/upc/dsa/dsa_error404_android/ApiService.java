@@ -27,5 +27,7 @@ public interface ApiService {
 
     @GET("game/users/objects/list")
     Call<List<GameObject>> getUserObjects(@Query("nombre") String nombre);
+    @GET("game/teams/ranking")
+    Call<List<TeamRanking>> getTeamsRanking();
 
 }
